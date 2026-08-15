@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free.AnimeIN — Watch Original Anime</title>
+<meta name="description" content="Free.AnimeIN — a home for original anime series and episodes.">
+<style>
+:root{--bg:#08090d;--card:#11131a;--card2:#171923;--text:#f5f7fb;--muted:#a9afbf;--accent:#8b5cf6;--accent2:#ec4899;--border:#262a36}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -10%,#32105c55,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{text-decoration:none;color:inherit}.nav{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:sticky;top:0;z-index:10;background:#08090de8;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff0b}.logo{font-weight:900;font-size:22px;letter-spacing:-.5px}.logo span{color:#c084fc}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.navlinks a:hover{color:#fff}.search{background:#11131a;border:1px solid var(--border);color:#fff;border-radius:10px;padding:10px 13px;width:210px;outline:none}.hero{min-height:520px;padding:90px 5% 70px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,#08090d 0%,#08090dcc 42%,#08090d35 100%),radial-gradient(circle at 78% 42%,#7c3aed55,transparent 33%)}.hero:after{content:"";position:absolute;right:-10%;top:10%;width:52%;height:80%;background:linear-gradient(135deg,#ec489966,#7c3aed22);filter:blur(70px);transform:rotate(-12deg)}.hero-content{max-width:650px;position:relative;z-index:1}.tag{display:inline-block;background:#8b5cf622;border:1px solid #8b5cf655;color:#d8b4fe;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700;margin-bottom:18px}.hero h1{font-size:clamp(42px,7vw,78px);line-height:.98;margin:0 0 20px;letter-spacing:-3px}.hero p{font-size:17px;line-height:1.7;color:var(--muted);max-width:560px}.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{border:0;border-radius:11px;padding:13px 18px;font-weight:800;cursor:pointer}.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}.secondary{background:#ffffff0b;border:1px solid var(--border);color:#fff}.section{padding:55px 5%}.section h2{margin:0 0 8px;font-size:28px}.sub{color:var(--muted);margin:0 0 25px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--border);border-radius:15px;overflow:hidden;transition:.2s;cursor:pointer}.card:hover{transform:translateY(-4px);border-color:#8b5cf655}.poster{height:240px;display:flex;align-items:end;padding:15px;background:linear-gradient(135deg,#30135e,#121827 52%,#be185d);position:relative}.poster.two{background:linear-gradient(135deg,#082f49,#111827 55%,#0f766e)}.poster.three{background:linear-gradient(135deg,#431407,#171717 50%,#b45309)}.poster.four{background:linear-gradient(135deg,#172554,#111827 55%,#7e22ce)}.poster:before{content:"ANIME";font-size:38px;font-weight:950;opacity:.12;position:absolute;right:10px;top:18px;transform:rotate(-12deg)}.poster strong{font-size:20px;text-shadow:0 2px 12px #000}.info{padding:14px}.info h3{margin:0 0 6px;font-size:16px}.meta{color:var(--muted);font-size:12px}.watch{display:inline-block;margin-top:12px;color:#c4b5fd;font-size:13px;font-weight:800}.player{margin-top:25px;background:#050507;border:1px solid var(--border);border-radius:16px;overflow:hidden;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-align:center}.play{width:72px;height:72px;border-radius:50%;border:1px solid #ffffff33;background:#ffffff12;color:white;font-size:27px;cursor:pointer}.notice{background:#11131a;border:1px solid var(--border);border-radius:14px;padding:18px;color:var(--muted);line-height:1.6}.footer{border-top:1px solid var(--border);padding:35px 5%;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.search{width:150px}}@media(max-width:560px){.grid{grid-template-columns:1fr 1fr;gap:10px}.poster{height:190px}.hero{min-height:560px}.hero h1{letter-spacing:-2px}.search{display:none}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#">Free.<span>AnimeIN</span></a>
+  <nav class="navlinks"><a href="#home">Home</a><a href="#series">Series</a><a href="#episodes">Episodes</a><a href="#about">About</a></nav>
+  <input class="search" id="search" placeholder="Search anime..." aria-label="Search anime">
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-content">
+    <span class="tag">YOUR ORIGINAL ANIME HUB</span>
+    <h1>Stories beyond<br>the screen.</h1>
+    <p>Welcome to Free.AnimeIN — a clean, mobile-first home for original anime, web series, and episodes created by independent storytellers.</p>
+    <div class="buttons"><a class="btn primary" href="#series">Explore Series</a><a class="btn secondary" href="#episodes">Latest Episodes</a></div>
+  </div>
+</section>
+
+<section class="section" id="series">
+  <h2>Featured Series</h2><p class="sub">Replace these demo titles with your own anime.</p>
+  <div class="grid" id="cards">
+    <article class="card" data-title="Shadow Reign"><div class="poster"><strong>Shadow Reign</strong></div><div class="info"><h3>Shadow Reign</h3><div class="meta">Action • Fantasy • 8 Episodes</div><span class="watch">View series →</span></div></article>
+    <article class="card" data-title="Neon Souls"><div class="poster two"><strong>Neon Souls</strong></div><div class="info"><h3>Neon Souls</h3><div class="meta">Sci-Fi • Thriller • 6 Episodes</div><span class="watch">View series →</span></div></article>
+    <article class="card" data-title="Crimson Moon"><div class="poster three"><strong>Crimson Moon</strong></div><div class="info"><h3>Crimson Moon</h3><div class="meta">Dark Fantasy • 10 Episodes</div><span class="watch">View series →</span></div></article>
+    <article class="card" data-title="Skybound"><div class="poster four"><strong>Skybound</strong></div><div class="info"><h3>Skybound</h3><div class="meta">Adventure • Drama • 12 Episodes</div><span class="watch">View series →</span></div></article>
+  </div>
+</section>
+
+<section class="section" id="episodes">
+  <h2>Latest Episode</h2><p class="sub">Demo player — connect your own video URL to make it playable.</p>
+  <div class="player" id="player"><div><button class="play" id="play">▶</button><p>Episode 01 — Coming soon</p></div></div>
+  <div class="notice" style="margin-top:18px">This starter site is designed for <b>your own or properly licensed content</b>. To publish an episode, replace the demo player with your hosted video or an embed from a video service.</div>
+</section>
+
+<section class="section" id="about">
+  <h2>About Free.AnimeIN</h2>
+  <p class="sub">A simple starting point for an independent anime platform.</p>
+  <div class="notice">Built for original stories, independent creators, trailers, episodes, and licensed content. Add your logo, social links, series artwork, episode data, and video hosting when you're ready to launch.</div>
+</section>
+</main>
+
+<footer class="footer"><span>© 2026 Free.AnimeIN</span><span>Original & licensed content only.</span></footer>
+
+<script>
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{const q=search.value.toLowerCase();document.querySelectorAll('#cards .card').forEach(c=>c.style.display=c.dataset.title.toLowerCase().includes(q)?'block':'none')});
+document.getElementById('play').addEventListener('click',()=>alert('Demo player. Add your own video URL/embed to enable playback.'));
+</script>
+</body>
+</html>
